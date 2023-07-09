@@ -2423,6 +2423,21 @@ Visualization Manager:
           Value: false
       Enabled: true
       Name: Control
+    - Class: rviz_common/Group
+      Displays:
+        - Class: rviz_plugins/SimulationContext
+          Enabled: true
+          Name: SimulationContext
+          Text Color: 255; 255; 255
+          Topic:
+            Depth: 5
+            Durability Policy: Volatile
+            History Policy: Keep Last
+            Reliability Policy: Reliable
+            Value: /simulation/context
+          Value: true
+      Enabled: true
+      Name: SimulationContext
   Enabled: true
   Global Options:
     Background Color: 10; 10; 10
