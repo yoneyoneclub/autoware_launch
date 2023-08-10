@@ -48,12 +48,12 @@
   </group>
 
   <!-- Pointcloud container -->
-  <group if="$(var use_pointcloud_container)">
-    <include file="$(find-pkg-share autoware_launch)/launch/pointcloud_container.launch.py">
-      <arg name="use_multithread" value="true"/>
-      <arg name="container_name" value="$(var pointcloud_container_name)"/>
-    </include>
-  </group>
+<!--  <group if="$(var use_pointcloud_container)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/pointcloud_container.launch.py">-->
+<!--      <arg name="use_multithread" value="true"/>-->
+<!--      <arg name="container_name" value="$(var pointcloud_container_name)"/>-->
+<!--    </include>-->
+<!--  </group>-->
 
   <!-- Vehicle -->
   <group if="$(var launch_vehicle)">
@@ -71,43 +71,43 @@
     <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_system_component.launch.xml"/>
   </group>
 
-  <!-- Map -->
-  <group if="$(var launch_map)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_map_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; Map &ndash;&gt;-->
+<!--  <group if="$(var launch_map)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_map_component.launch.xml"/>-->
+<!--  </group>-->
 
-  <!-- Sensing -->
-  <group if="$(var launch_sensing)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_sensing_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; Sensing &ndash;&gt;-->
+<!--  <group if="$(var launch_sensing)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_sensing_component.launch.xml"/>-->
+<!--  </group>-->
 
-  <!-- Localization -->
-  <group if="$(var launch_localization)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_localization_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; Localization &ndash;&gt;-->
+<!--  <group if="$(var launch_localization)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_localization_component.launch.xml"/>-->
+<!--  </group>-->
 
-  <!-- Perception -->
-  <group if="$(var launch_perception)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_perception_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; Perception &ndash;&gt;-->
+<!--  <group if="$(var launch_perception)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_perception_component.launch.xml"/>-->
+<!--  </group>-->
 
-  <!-- Planning -->
-  <group if="$(var launch_planning)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_planning_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; Planning &ndash;&gt;-->
+<!--  <group if="$(var launch_planning)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_planning_component.launch.xml"/>-->
+<!--  </group>-->
 
-  <!-- Control -->
-  <group if="$(var launch_control)">
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_control_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; Control &ndash;&gt;-->
+<!--  <group if="$(var launch_control)">-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_control_component.launch.xml"/>-->
+<!--  </group>-->
 
-  <!-- API -->
-  <group>
-    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_autoware_api_component.launch.xml"/>
-  </group>
+<!--  &lt;!&ndash; API &ndash;&gt;-->
+<!--  <group>-->
+<!--    <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_autoware_api_component.launch.xml"/>-->
+<!--  </group>-->
 
   <!-- Tools -->
-  <group>
-    <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var rviz_config) -s $(find-pkg-share autoware_launch)/rviz/image/autoware.png" if="$(var rviz)"/>
-  </group>
+<!--  <group>-->
+<!--    <node pkg="rviz2" exec="rviz2" name="rviz2" output="screen" args="-d $(var rviz_config) -s $(find-pkg-share autoware_launch)/rviz/image/autoware.png" if="$(var rviz)"/>-->
+<!--  </group>-->
 </launch>
