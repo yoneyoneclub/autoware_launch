@@ -26,7 +26,6 @@
       # avoidance is performed for the object type with true
       target_object:
         car:
-          execute_num: 1                               # [-]
           moving_speed_threshold: 1.0                  # [m/s]
           moving_time_threshold: 2.0                   # [s]
           lateral_margin:
@@ -37,7 +36,6 @@
           max_expand_ratio: 0.0                        # [-]
           envelope_buffer_margin: 0.5                  # [m]
         truck:
-          execute_num: 1
           moving_speed_threshold: 1.0                  # 3.6km/h
           moving_time_threshold: 2.0
           lateral_margin:
@@ -48,7 +46,6 @@
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.5
         bus:
-          execute_num: 1
           moving_speed_threshold: 1.0                  # 3.6km/h
           moving_time_threshold: 2.0
           lateral_margin:
@@ -59,7 +56,6 @@
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.5
         trailer:
-          execute_num: 1
           moving_speed_threshold: 1.0                  # 3.6km/h
           moving_time_threshold: 2.0
           lateral_margin:
@@ -70,7 +66,6 @@
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.5
         unknown:
-          execute_num: 1
           moving_speed_threshold: 0.28                 # 1.0km/h
           moving_time_threshold: 1.0
           lateral_margin:
@@ -81,7 +76,6 @@
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.1
         bicycle:
-          execute_num: 1
           moving_speed_threshold: 0.28                 # 1.0km/h
           moving_time_threshold: 1.0
           lateral_margin:
@@ -92,7 +86,6 @@
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.5
         motorcycle:
-          execute_num: 1
           moving_speed_threshold: 1.0                  # 3.6km/h
           moving_time_threshold: 1.0
           lateral_margin:
@@ -103,7 +96,6 @@
           max_expand_ratio: 0.0
           envelope_buffer_margin: 0.5
         pedestrian:
-          execute_num: 1
           moving_speed_threshold: 0.28                 # 1.0km/h
           moving_time_threshold: 1.0
           lateral_margin:
