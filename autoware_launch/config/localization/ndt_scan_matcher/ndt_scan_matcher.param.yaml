@@ -43,7 +43,7 @@
 
     initial_pose_estimation:
       # The number of particles to estimate initial pose
-      particles_num: 200
+      particles_num: 20
 
       # The number of initial random trials in the TPE (Tree-Structured Parzen Estimator).
       # This value should be equal to or less than 'initial_estimate_particles_num' and more than 0.
