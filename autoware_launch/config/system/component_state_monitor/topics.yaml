@@ -206,3 +206,16 @@
     warn_rate: 5.0
     error_rate: 1.0
     timeout: 1.0
+    
+- module: sensing/imu
+  mode: [online]
+  type: autonomous
+  args:
+    node_name_suffix: imu_monitor
+    topic: /sensing/imu/imu_raw
+    topic_type: sensor_msgs/msg/Imu
+    best_effort: false
+    transient_local: false
+    warn_rate: 15.0
+    error_rate: 5.0
+    timeout: 0.5

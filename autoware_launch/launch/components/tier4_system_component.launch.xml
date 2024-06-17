@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <arg name="system_error_monitor_param_path" default="$(find-pkg-share autoware_launch)/config/system/system_error_monitor/system_error_monitor.param.yaml"/>
+  <arg name="system_error_monitor_param_path" default="$(find-pkg-share iino_aw_launch)/config/$(var vehicle_model)/system_error_monitor/system_error_monitor.param.yaml"/>
 
   <include file="$(find-pkg-share tier4_system_launch)/launch/system.launch.xml">
     <arg name="run_mode" value="$(var system_run_mode)"/>
